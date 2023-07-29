@@ -1,0 +1,30 @@
+.icons {
+  color: var(--clr-primary-4);
+}
+.pageLinks {
+  font-weight: 600 !important;
+  font-size: 1.5rem;
+}
+.nav-link:hover {
+  color: var(--clr-primary-4) !important;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--clr-primary-4) !important;
+}
+@media (max-width: 991px) {
+  .social-icons {
+    flex-direction: row !important;
+  }
+  .social-icons:not(:first-child) {
+    margin-left: 2em;
+  }
+  .row > * {
+    max-width: 15% !important;
+  }
+  .menu-burger {
+    border: none !important;
+    padding: 0px !important;
+    margin-left: 0.5em;
+  }
+}
