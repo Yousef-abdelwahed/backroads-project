@@ -5,8 +5,8 @@ export const socialLinks = [
   { id: 3, href: "https://www.squarespace.com", icon: "fab fa-squarespace" },
 ];
 export const pageLinks = [
-  { id: 1, href: "#home", text: "Home" },
-  { id: 2, href: "#about", text: "About" },
-  { id: 3, href: "#services", text: "Services" },
-  { id: 4, href: "#tours", text: "Tours" },
+  { id: "#home", href: "home", text: "Home" },
+  { id: "#about", href: "about", text: "About" },
+  { id: "#services", href: "services", text: "Services" },
+  { id: "#tours", href: "tours", text: "Tours" },
 ];

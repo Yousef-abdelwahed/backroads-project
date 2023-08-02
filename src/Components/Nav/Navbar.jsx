@@ -14,9 +14,9 @@ import "./NavBar.css";
 const NavBarComponent = () => {
   return (
     <>
-      {/* ***************************** */}
+      {/* ********** bg-body-tertiary ******************* */}
 
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar expand="lg" className="bg-transparent nav-bg position-fixed">
         <Container>
           <Row>
             <Navbar.Toggle
@@ -41,6 +41,7 @@ const NavBarComponent = () => {
                 return (
                   <PageLinks
                     {...pageLink}
+                    id={pageLink.id}
                     key={pageLink.id}
                     itemClass="pageLinks"
                   />
