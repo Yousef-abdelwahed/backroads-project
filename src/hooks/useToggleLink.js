@@ -5,6 +5,5 @@ export const useToggleLink = (initState = false) => {
   const toggle = () => {
     setState((prev) => !prev);
   };
-  console.log(state);
   return [state, toggle];
 };

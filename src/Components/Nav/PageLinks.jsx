@@ -1,13 +1,21 @@
 // import Nav from "react-bootstrap/Nav";
 import { useToggleLink } from "../../hooks/useToggleLink";
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 const PageLinks = ({ href, text, itemClass, id }) => {
   const { state, ToggleActiveLink } = useToggleLink();
+
+  const handleScroll = () => {
+    if (window.scrollY > 500) {
+      console.log("first");
+    }
+  };
+
+  // console.log(() => (scroll.scrollMore(100) > 100 ? { color: "red" } : ""));
   // const onUpdateActiveLink = (e) => {
   //   setActiveLink(e.currentTarget.id);
   // };
   return (
-    <li className="nav-item">
+    <li className="nav-item jello-horizontal text-shadow-pop-left">
       {" "}
       <Link
         to={href}
@@ -18,7 +26,8 @@ const PageLinks = ({ href, text, itemClass, id }) => {
         spy={true}
         smooth={true}
         offset={-100}
-        duration={400}
+        duration={500}
+        onScroll={() => handleScroll}
       >
         {text}
       </Link>
