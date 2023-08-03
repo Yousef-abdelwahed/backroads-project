@@ -68,6 +68,13 @@ h4 {
   line-height: 1.25;
   margin-bottom: 0.75em;
 }
-section {
-  height: 100vh;
+.section {
+  padding: 5rem 0;
+  scroll-margin-top: 4rem;
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
 }
