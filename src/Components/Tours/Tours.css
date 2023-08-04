@@ -1,3 +1,6 @@
+.tours {
+  margin-bottom: 5rem;
+}
 .card {
   border: none;
   background-color: var(--clr-grey-10);

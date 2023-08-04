@@ -16,7 +16,10 @@ const NavBarComponent = () => {
     <>
       {/* ********** bg-body-tertiary ******************* */}
 
-      <Navbar expand="lg" className="bg-transparent nav-bg position-fixed">
+      <Navbar
+        expand="lg"
+        className="bg-transparent nav-bg position-fixed z-index-1"
+      >
         <Container>
           <Row>
             <Navbar.Toggle
