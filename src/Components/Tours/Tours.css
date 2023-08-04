@@ -1,0 +1,12 @@
+.tours {
+  margin-bottom: 5rem;
+}
+.card {
+  border: none;
+  background-color: var(--clr-grey-10);
+  padding: 0.7rem;
+}
+
+.card-footer-info {
+  color: var(--clr-primary-4);
+}
